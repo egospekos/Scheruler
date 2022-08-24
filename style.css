@@ -1,0 +1,161 @@
+:root{
+    --primal:#628080;
+    --seconder:#728585;
+    --white:#F9F6EE;
+    --black:#020403;
+    --gray:#e8e8e8;
+}
+
+.dataBox {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    transition: all 0.65s;
+    padding-right: 3px;
+    padding-left: 3px;
+    background-color: var(--white);
+    border-width: 4px;
+    border-style: solid;
+    border-color: var(--primal);
+}
+
+
+.dataBox:hover .boxButtons {
+    opacity: 1;
+    transition: 1s;
+}
+
+
+.firstBox {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-right: 3px;
+    padding-left: 3px;
+    background-color: var(--seconder);
+    color: var(--white);
+    font-weight: 600;
+}
+
+    .firstBox:hover .headButtonDiv {
+        opacity:1;
+    }
+
+.firstBoxText {
+    padding-left: 8px;
+}
+
+/*.innerBox {
+    background-color: #ffffff;
+}*/
+
+.innerBox:hover {
+    border-style: dotted;
+    border-color: var(--primal);
+    border-width: 3px;
+    transition: 0.4s;
+    transform: scale(1.2);
+}
+
+.cornerBox {
+    padding-left: 8px;
+    border-top-left-radius: 15px;
+    text-align:center;
+}
+
+
+
+
+
+.boxText {
+    flex: 70%;
+    text-align: center;
+}
+.dateText{
+    color:var(--white);
+}
+
+.boxButtons {
+    flex: 30%;
+    text-align: center;
+    opacity: 0;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    color: var(--black);
+}
+
+.headerBox {
+    width: 55px;
+    height: 55px;
+    background-color: var(--primal);
+}
+
+.dayBox {
+    width: 55px;
+    height: 25px;
+    background-color: var(--seconder);
+}
+
+
+.lejant {
+    background-color: var(--seconder);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lejantBox {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    transition: all 0.65s;
+    padding-right: 3px;
+    padding-left: 3px;
+    background-color: var(--white);
+}
+
+.title{
+    text-align:center;
+    font-size:20px;
+}
+
+.monthName {
+    text-align: center;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.tableDiv {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.headButtonDiv{
+    display:flex;
+    justify-content:space-between;
+    padding-right:10px;
+    padding-left:10px;
+    opacity:0;
+    color:var(--black);
+}
+
+.fa:hover {
+    color: var(--gray);
+}
+
+.seperatorBox {
+    width: 65px;
+    height: 10px;
+    background-color: var(--primal);
+}
+
+td {
+    padding: 0!important;
+}
